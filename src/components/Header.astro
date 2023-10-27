@@ -1,0 +1,73 @@
+---
+import ButtonHeader from './ButtonHeader.astro';
+---
+
+<header class='py-4 px-2 mx-auto max-w-xl lg:py-8 lg:px-4'>
+  <nav class='flex gap-4 justify-center'>
+    <ButtonHeader href='/'>
+      Home
+      <svg
+        slot='after'
+        class='icon icon-tabler icon-tabler-home-2'
+        width='30'
+        height='30'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='#fff'
+        fill='none'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      >
+        <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+        <path d='M5 12l-2 0l9 -9l9 9l-2 0'></path>
+        <path d='M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7'></path>
+        <path d='M10 12h4v4h-4z'></path>
+      </svg>
+    </ButtonHeader>
+    <ButtonHeader href='/about'>
+      About
+      <svg
+        xmlns='http://www.w3.org/2000/svg'
+        class='icon icon-tabler icon-tabler-info-hexagon'
+        width='30'
+        height='30'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='#fff'
+        fill='none'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      >
+        <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+        <path
+          d='M19.875 6.27c.7 .398 1.13 1.143 1.125 1.948v7.284c0 .809 -.443 1.555 -1.158 1.948l-6.75 4.27a2.269 2.269 0 0 1 -2.184 0l-6.75 -4.27a2.225 2.225 0 0 1 -1.158 -1.948v-7.285c0 -.809 .443 -1.554 1.158 -1.947l6.75 -3.98a2.33 2.33 0 0 1 2.25 0l6.75 3.98h-.033z'
+        ></path>
+        <path d='M12 9h.01'></path>
+        <path d='M11 12h1v4h1'></path>
+      </svg>
+    </ButtonHeader>
+    <ButtonHeader href='/posts'>
+      Posts
+      <svg
+        class='icon icon-tabler icon-tabler-building-factory-2'
+        width='30'
+        height='30'
+        viewBox='0 0 24 24'
+        stroke-width='1.5'
+        stroke='#fff'
+        fill='none'
+        stroke-linecap='round'
+        stroke-linejoin='round'
+      >
+        <path stroke='none' d='M0 0h24v24H0z' fill='none'></path>
+        <path d='M3 21h18'></path>
+        <path d='M5 21v-12l5 4v-4l5 4h4'></path>
+        <path
+          d='M19 21v-8l-1.436 -9.574a.5 .5 0 0 0 -.495 -.426h-1.145a.5 .5 0 0 0 -.494 .418l-1.43 8.582'
+        ></path>
+        <path d='M9 17h1'></path>
+        <path d='M14 17h1'></path>
+      </svg>
+    </ButtonHeader>
+  </nav>
+</header>

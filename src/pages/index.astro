@@ -1,0 +1,18 @@
+---
+import ButtonHeader from '../components/ButtonHeader.astro';
+import Layout from '../layouts/Layout.astro';
+
+// const allPost = await Astro.glob('../content/tips/*.md');
+---
+
+<Layout title='Welcome to Astro'>
+  <div>
+    <h1 class='text-4xl text-white text-center'>Space-AO</h1>
+    <p class='text-white text-center mt-6 text-lg'>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit
+    </p>
+  </div>
+  <div class='text-center mt-4'>
+    <ButtonHeader href='blog/first-entry'>First Entry</ButtonHeader>
+  </div>
+</Layout>

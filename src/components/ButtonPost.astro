@@ -1,0 +1,16 @@
+---
+interface Props {
+  href: string;
+}
+
+const { href } = Astro.props;
+---
+
+<a
+  href={href}
+  class='flex-row justify-center cursor-pointer text-slate-200 border border-slate-200 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-[#1da1f2]/50 font-medium rounded-lg px-5 py-3 text-center inline-flex items-center dark:focus:ring-[#1da1f2]/55 mr-2 mb-2 hover:shadow-lg transition-all duration-200 ease-in-out scale-90 gap-x-2 opacity-90 hover:opacity-100 text-lg'
+>
+  <slot name='before' />
+  <slot />
+  <slot name='after' />
+</a>

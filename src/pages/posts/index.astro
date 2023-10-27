@@ -1,0 +1,29 @@
+---
+import Card from '../../components/Card.astro';
+import Layout from '../../layouts/Layout.astro';
+import { type Post } from '../../types';
+import { getCollection } from 'astro:content';
+
+const posts: Post[] = await getCollection('tips');
+---
+
+<Layout title='Welcome to Astro'>
+  <div
+    class='grid grid-cols-1 px-10 my-16 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-8'
+  >
+    {
+      posts.map((post) => {
+        const { title, description, pubDate, tags } = post.data;
+        return (
+          <Card
+            title={title}
+            description={description}
+            pubDate={pubDate}
+            tags={tags}
+            slug={post.slug}
+          />
+        );
+      })
+    }
+  </div>
+</Layout>
